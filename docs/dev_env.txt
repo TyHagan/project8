@@ -1,0 +1,13 @@
+## GIT
+-create GitHub account
+-install GIT client (as of 9/23/19 running Git for Windows 2.23.0)
+-email your GitHub username to Ty and request to be a collaborator for https://github.com/TyHagan/project8.git
+-respond to the invite email
+-open GitBASH
+-change directory to the parent of your root development directory, e.g. C:\kevin\
+-pull all the files: "git clone https://github.com/TyHagan/project8.git"
+-explore the project8 subdirectories
+
+## Unity
+## ** KTH - need to decide on Unity version and get working on the 2 dev boxes, e.g. unity 5.5.4p4 versus 2018.4.8f1
+
