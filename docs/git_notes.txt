@@ -45,6 +45,8 @@ Next remove the Github keys.
 git remote set-url origin git@github.com:MrsColombo/elsevier-twitter-rest-api.git
 git remote set-url origin git@github.com:kthagan/hello_world.git
 
+## **** KTH notes 9/23/19 - the real solution is that you need to add collaborators in GitHub
+
 --- this seems to be the sequence
 git add
 git commit
