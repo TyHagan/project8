@@ -8,6 +8,10 @@
 -pull all the files: "git clone https://github.com/TyHagan/project8.git"
 -explore the project8 subdirectories
 
+## Tortoise GIT [as of 9/23/19]
+https://tortoisegit.org/download/
+Download TortoiseGit 2.8.0 - 64-bit (~19.0 MiB)
+
 ## Unity
 ## ** KTH - need to decide on Unity version and get working on the 2 dev boxes, e.g. unity 5.5.4p4 versus 2018.4.8f1
 
