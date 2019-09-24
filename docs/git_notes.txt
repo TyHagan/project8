@@ -46,6 +46,7 @@ git remote set-url origin git@github.com:MrsColombo/elsevier-twitter-rest-api.gi
 git remote set-url origin git@github.com:kthagan/hello_world.git
 
 ## **** KTH notes 9/23/19 - the real solution is that you need to add collaborators in GitHub
+## goto https://github.com/TyHagan/project8/settings/collaboration
 
 --- this seems to be the sequence
 git add
