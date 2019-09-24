@@ -1,0 +1,75 @@
+Git Ideas
+
+-- GitHub Desktop -- this may be a good tool
+
+--how integrate Git with Unity?
+
+--how view revision history?
+
+--how pull files to local disk?
+
+
+OK, my repo is not showing up.  let's go look around
+
+
+
+
+KTH -- USEFUL COMMANDS --
+
+git --help
+
+git init
+git clone
+
+
+git status 
+
+## to change users
+git config user.email
+git config --global user.email "myemail@gmail.com"
+git config user.name
+git config --global user.name "Hagan"
+
+## useful
+git config -l
+
+## when I got perms errors trying to check in
+## this worked from https://www.freecodecamp.org/forum/t/need-your-help-with-github-permission-denied-to-my-own-repo/17421/4
+@MrsColombo I had this problem too but managed to solve it, the error is that ur computer has saved a git username and password so if you shift to another account the error 403 will appear. Below is the solution
+For Windows you can find the keys here:
+
+control panel > user accounts > credential manager > Windows credentials > Generic credentials
+
+Next remove the Github keys.
+## this did not work
+git remote set-url origin git@github.com:MrsColombo/elsevier-twitter-rest-api.git
+git remote set-url origin git@github.com:kthagan/hello_world.git
+
+--- this seems to be the sequence
+git add
+git commit
+git push
+
+-- pull to local disk, i.e. connect to a repository
+git clone <repo_URL>  -- I think this is what I want.  YES!   Example:  git clone https://github.com/kthagan/repo1.git
+git pull
+
+
+--create new repostory --   see https://kbroman.org/github_tutorial/pages/init.html
+git init <dir name>
+
+
+
+9/21 questions:
+--where is repo3?  who ownes it?  how do I sync it to another device? -- I really don't know
+
+
+OK, let's focus on repo1 for now?  let's try and get that little piece working...
+--OK, I have it on 2 computers.  I don't know how to connect to a new place.  let's try
+
+
+OK, so the last piece is to have multiple users "clone" the directory and do checkins, etc.
+
+also, how do I create a new reposiory?
+
+
