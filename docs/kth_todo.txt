@@ -1,3 +1,4 @@
 ## 9/24
 -fix GIT conflicts on Ty desktop and submit new script files and test on red laptop
 -get Visual Studipo working on red laptop
+-tune red laptop to try and get better perf.  see silver laptop notes
