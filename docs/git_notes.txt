@@ -1,3 +1,6 @@
+### KTH - 9/24/19 - this file contains my notes while learning GIT, primarily through the command line.  Most developers should ignore this and go to the dev_env document
+
+
 Git Ideas
 
 -- GitHub Desktop -- this may be a good tool
