@@ -8,6 +8,49 @@
 -pull all the files: "git clone https://github.com/TyHagan/project8.git"
 -explore the project8 subdirectories
 
+## Tortoise GIT [as of 9/23/19]
+https://tortoisegit.org/download/
+Download TortoiseGit 2.8.0 - 64-bit (~19.0 MiB)
+
 ## Unity
 ## ** KTH - need to decide on Unity version and get working on the 2 dev boxes, e.g. unity 5.5.4p4 versus 2018.4.8f1
+## KH - downloading latest Unity Hub - 2.1.2  (as of 9/23/19)
+## KH - downloading latest - 2019.2.6f1 -- the code works!!
+
+## *** BEGIN pruning the repo of cache files and figurong out .gitignore ***
+## I think we have checked in generated files and want to exclude those.  We will have to figure that out
+## KH - 9/24/19 - I have deleted a number of cache and other files.  
+## I think the remaining files should be excluded via a .gitignore file, but I am going to pause here while I test more and other dev envs get setup
+## here is the current git status on my machine after opening a clean project8
+Ty Hagan@LAPTOP-JI71ALRL MINGW64 ~/Desktop/kevin/project8 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   code/test1/Packages/manifest.json
+        modified:   code/test1/ProjectSettings/ProjectVersion.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        code/test1/Library/APIUpdater/
+        code/test1/Library/CurrentLayout-default.dwlt
+        code/test1/Library/EditorInstance.json
+        code/test1/Library/PackageCache/
+        code/test1/Library/SceneVisibilityState.asset
+        code/test1/Library/ScriptAssemblies/
+        code/test1/Library/ScriptMapper
+        code/test1/Library/ShaderCache/
+        code/test1/Library/assetDatabase3
+        code/test1/Library/metadata/
+        code/test1/Library/shadercompiler-UnityShaderCompiler.exe0.log
+        code/test1/Logs/
+        code/test1/ProjectSettings/XRSettings.asset
+        code/test1/Temp/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+## *** END pruning the repo of cache files and figurong out .gitignore ***
+
 
