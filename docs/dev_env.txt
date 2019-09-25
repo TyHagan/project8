@@ -17,3 +17,5 @@ Download TortoiseGit 2.8.0 - 64-bit (~19.0 MiB)
 ## KH - downloading latest Unity Hub - 2.1.2  (as of 9/23/19)
 ## KH - downloading latest - 2019.2.6f1 -- the code works!!
 
+## *** I think we have checked in generated files and want to exclude those.  We will have to figure that out
+
