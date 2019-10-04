@@ -66,6 +66,7 @@ git pull
 git init <dir name>
 
 
+## KH comment on 10/3/19
 
 9/21 questions:
 --where is repo3?  who ownes it?  how do I sync it to another device? -- I really don't know
