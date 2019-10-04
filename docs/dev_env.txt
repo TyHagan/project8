@@ -17,7 +17,7 @@ Download TortoiseGit 2.8.0 - 64-bit (~19.0 MiB)
 ## KH - downloading latest Unity Hub - 2.1.2  (as of 9/23/19)
 ## KH - downloading latest - 2019.2.6f1 -- the code works!!
 
-## *** BEGIN pruning the repo of cache files and figurong out .gitignore ***
+## *** BEGIN pruning the repo of cache files and figuring out .gitignore ***
 ## I think we have checked in generated files and want to exclude those.  We will have to figure that out
 ## KH - 9/24/19 - I have deleted a number of cache and other files.  
 ## I think the remaining files should be excluded via a .gitignore file, but I am going to pause here while I test more and other dev envs get setup
@@ -51,6 +51,10 @@ Untracked files:
         code/test1/Temp/
 
 no changes added to commit (use "git add" and/or "git commit -a")
+
+## KTH - continuing work on this on 10/3/19
+-I have created a .gitignore file to ignore the Library, Logs and Temp directories and their children.  From what I can tell, the Library directory is generated locally and best to not check in the contents.
+
 ## *** END pruning the repo of cache files and figurong out .gitignore ***
 
 
