@@ -1,22 +1,6 @@
 ### KTH - 9/24/19 - this file contains my notes while learning GIT, primarily through the command line.  Most developers should ignore this and go to the dev_env document
 
 
-Git Ideas
-
--- GitHub Desktop -- this may be a good tool
-
---how integrate Git with Unity?
-
---how view revision history?
-
---how pull files to local disk?
-
-
-OK, my repo is not showing up.  let's go look around
-
-
-
-
 KTH -- USEFUL COMMANDS --
 
 git --help
@@ -88,5 +72,23 @@ Please use `git update-git-for-windows` instead.
 Git for Windows 2.17.1.windows.2 (64bit)
 Update 2.23.0.windows.1 is available
 Download and install Git for Windows 2.23.0 [N/y]? y
+
+
+
+
+####  9/21  KTH old stuff
+Git Ideas
+
+-- GitHub Desktop -- this may be a good tool
+
+--how integrate Git with Unity?
+
+--how view revision history?
+
+--how pull files to local disk?
+
+
+OK, my repo is not showing up.  let's go look around
+
 
 
