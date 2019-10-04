@@ -9,17 +9,34 @@ public class spawn_script : MonoBehaviour
     void Start()
     {
         //Basically just repeats the function spawn
-        InvokeRepeating("spawn", 0, 4);
+        //      InvokeRepeating("spawn", 0, 4);
+        Invoke("spawn", 4);
+
+
+        // Invoke("hello", 2);
     }
 
     // Update is called once per frame
     void Update()
     {
-    } 
-    
+    }
+
+    //definition of the function hello
+    public void hello()
+    {
+        // KTH trying to print time
+        Debug.Log("hello from hello():");
+
+        Invoke("hello", Random.Range(1, 10));
+    }
+
     //definition of the function spawn
     public void spawn()
     {
+        // KTH trying to print time
+        Debug.Log("hello from spawn():");
+        Invoke("spawn", Random.Range(1, 10));
+
         //instantiates as a game object
         GameObject newJoe = (GameObject) Instantiate(Joe) as GameObject;
 
