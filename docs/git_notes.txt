@@ -50,6 +50,10 @@ git pull
 git init <dir name>
 
 
+-- revert a file to the HEAD.  Useful when GIT thinks you have local changes that you just want to ignore/revert
+git checkout <filename>
+
+
 ## KH comment on 10/3/19
 
 9/21 questions:
