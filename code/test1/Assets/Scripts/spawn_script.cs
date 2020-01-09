@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class spawn_script : MonoBehaviour
 {
-    public GameObject Joe;
+    public GameObject Ball;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +38,7 @@ public class spawn_script : MonoBehaviour
         Invoke("spawn", Random.Range(1, 10));
 
         //instantiates as a game object
-        GameObject newJoe = (GameObject) Instantiate(Joe) as GameObject;
+        GameObject newBall = (GameObject) Instantiate(Ball) as GameObject;
 
 
         //perameters of where it should spawn
@@ -49,7 +49,7 @@ public class spawn_script : MonoBehaviour
         float y = 45;
 
     // puts all of the floats and pus the newJoe into the float postions
-        newJoe.transform.position = new Vector2(x, y);
+        newBall.transform.position = new Vector2(x, y);
     //Vector2 has 2 axis (thats my guess) x and y. Vector3 has x, y, and z.
     }
     
