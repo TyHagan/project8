@@ -55,6 +55,6 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ## KTH - continuing work on this on 10/3/19
 -I have created a .gitignore file to ignore the Library, Logs and Temp directories and their children.  From what I can tell, the Library directory is generated locally and best to not check in the contents.
 
-## *** END pruning the repo of cache files and figurong out .gitignore ***
+## *** END pruning the repo of cache files and figuring out .gitignore ***
 
 
