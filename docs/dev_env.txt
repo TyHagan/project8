@@ -17,6 +17,9 @@ using latest Unity Hub - 2.1.2  (as of 9/23/19)
 using latest - 2019.2.6f1 -- the code works!!
 
 
+## logging your time worked and feature list - see this Google doc
+https://docs.google.com/spreadsheets/d/1qUYHRZoCXR8Z7oHnTN-ueG9KbKSqzhQncNk9uzPeiTo/edit#gid=1481405655
+
 
 ## *** BEGIN pruning the repo of cache files and figuring out .gitignore ***
 ## I think we have checked in generated files and want to exclude those.  We will have to figure that out
