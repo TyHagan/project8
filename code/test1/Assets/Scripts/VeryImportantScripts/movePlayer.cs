@@ -38,7 +38,7 @@ public class movePlayer : MonoBehaviour
                 Rigidbody2D rb = GetComponent<Rigidbody2D>();
                 rb.AddForce(Vector2.up * 800f);
             }
-            Debug.Log("collision");
+           
         }
     }
 }
