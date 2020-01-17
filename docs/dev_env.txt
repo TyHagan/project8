@@ -13,9 +13,10 @@ https://tortoisegit.org/download/
 Download TortoiseGit 2.8.0 - 64-bit (~19.0 MiB)
 
 ## Unity
-## ** KTH - need to decide on Unity version and get working on the 2 dev boxes, e.g. unity 5.5.4p4 versus 2018.4.8f1
-## KH - downloading latest Unity Hub - 2.1.2  (as of 9/23/19)
-## KH - downloading latest - 2019.2.6f1 -- the code works!!
+using latest Unity Hub - 2.1.2  (as of 9/23/19)
+using latest - 2019.2.6f1 -- the code works!!
+
+
 
 ## *** BEGIN pruning the repo of cache files and figuring out .gitignore ***
 ## I think we have checked in generated files and want to exclude those.  We will have to figure that out
