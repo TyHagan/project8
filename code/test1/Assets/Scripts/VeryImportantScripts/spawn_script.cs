@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class spawn_script : MonoBehaviour
 {
+
+    public movePlayer thePlayer;
+
+    private Vector3 lastPlayerPosition;
+    private float distanceToMove;
+
     public GameObject Ball;
     // Start is called before the first frame update
     void Start()
@@ -12,6 +18,8 @@ public class spawn_script : MonoBehaviour
         //      InvokeRepeating("spawn", 0, 4);
         Invoke("spawn", 4);
 
+        thePlayer = FindObjectOfType<movePlayer>();
+        lastPlayerPosition = thePlayer.transform.position;
 
         // Invoke("hello", 2);
     }
