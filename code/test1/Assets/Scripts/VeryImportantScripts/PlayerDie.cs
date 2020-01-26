@@ -20,7 +20,7 @@ public class PlayerDie : MonoBehaviour
     {
         if (col.gameObject.tag == "Enemy")
         {
-            Application.LoadLevel("Game Over");
+        //    Application.LoadLevel("Game Over");
         }
     }
 }

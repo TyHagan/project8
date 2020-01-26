@@ -15,13 +15,13 @@ public class movePlayer : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A))
         {
             Rigidbody2D rb = GetComponent<Rigidbody2D>();
             rb.AddForce(Vector2.left * 20f);
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             Rigidbody2D rb = GetComponent<Rigidbody2D>();
             rb.AddForce(Vector2.right * 20f);
@@ -33,7 +33,7 @@ public class movePlayer : MonoBehaviour
     {
         if (col.gameObject.tag == "Ground")
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 Rigidbody2D rb = GetComponent<Rigidbody2D>();
                 rb.AddForce(Vector2.up * 800f);

@@ -7,7 +7,7 @@ public class spawn_script : MonoBehaviour
 
     public movePlayer thePlayer;
 
-    private Vector3 lastPlayerPosition;
+    private Vector2 lastPlayerPosition;
     private float distanceToMove;
 
     public GameObject Ball;
@@ -27,6 +27,7 @@ public class spawn_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
     }
 
     //definition of the function hello
@@ -46,19 +47,19 @@ public class spawn_script : MonoBehaviour
         Invoke("spawn", Random.Range(1, 10));
 
         //instantiates as a game object
-        GameObject newBall = (GameObject) Instantiate(Ball) as GameObject;
+        /*       GameObject newBall = (GameObject) Instantiate(Ball) as GameObject;
+
+               distanceToMove = thePlayer.transform.position.y - lastPlayerPosition.y;
+               newBall.transform.position = new Vector2(transform.position.x, transform.position.y + distanceToMove + 50);
+               lastPlayerPosition = thePlayer.transform.postition;
+               */
 
 
-        //perameters of where it should spawn
-        //float x = Random.Range(30, 10);
-        //float y = Random.Range(15, 25);
+        distanceToMove = thePlayer.transform.position.y - lastPlayerPosition.y;
 
-        float x = 80;
-        float y = 45;
+        transform.position = new Vector3(transform.position.x, transform.position.y + distanceToMove, transform.position.z);
 
-    // puts all of the floats and pus the newJoe into the float postions
-        newBall.transform.position = new Vector2(x, y);
-    //Vector2 has 2 axis (thats my guess) x and y. Vector3 has x, y, and z.
+        lastPlayerPosition = thePlayer.transform.position;
     }
     
 }
