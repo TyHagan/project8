@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CoinGet : MonoBehaviour
 {
+    public AudioSource coin;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class CoinGet : MonoBehaviour
         {
             Destroy(col.gameObject);
             ScoreManager.scoreValue += 1;
+            coin.Play();
         }
     }
 }

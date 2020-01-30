@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class movePlayer : MonoBehaviour
 {
+    public AudioSource jump;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,7 @@ public class movePlayer : MonoBehaviour
             {
                 Rigidbody2D rb = GetComponent<Rigidbody2D>();
                 rb.AddForce(Vector2.up * 800f);
+                jump.Play();
             }
            
         }

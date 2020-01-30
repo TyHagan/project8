@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerDie : MonoBehaviour
 {
+    public AudioSource death;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,7 @@ public class PlayerDie : MonoBehaviour
     {
         if (col.gameObject.tag == "Enemy")
         {
+            death.Play();
             Application.LoadLevel("Game Over");
         }
     }
