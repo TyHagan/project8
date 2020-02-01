@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class PlatformGenerator : MonoBehaviour
 {
-    public GameObject thePlatform;
+    public GameObject thePlatform1;
+    public GameObject thePlatform2;
+    public GameObject thePlatform3;
     public Transform generationPoint;
     public float distanceBetween;
+    private int RandomPlatform = 2;
+    private int Platforms;
 
 
     // Start is called before the first frame update
@@ -20,9 +24,38 @@ public class PlatformGenerator : MonoBehaviour
     {
         if (transform.position.y < generationPoint.position.y)
         {
-            transform.position = new Vector3(58.95f, transform.position.y + distanceBetween, 0);
+            if (Platforms > 2)
+            {
+                RandomPlatform = Random.Range(1, 4);
+            }
+            else
+            {
+                RandomPlatform = 1;
+            }
 
-            Instantiate(thePlatform, transform.position, transform.rotation);
+            transform.position = new Vector3(58.95f, transform.position.y + distanceBetween, 0);
+            
+            if (RandomPlatform == 1)
+            {
+                Instantiate(thePlatform1, transform.position, transform.rotation);
+                Platforms += 1;
+            }
+            else
+            {
+                if (RandomPlatform == 2)
+                {
+                    Instantiate(thePlatform2, transform.position, transform.rotation);
+                    Platforms += 1;
+                }
+                else
+                {
+                    if (RandomPlatform == 3)
+                    {
+                        Instantiate(thePlatform3, transform.position, transform.rotation);
+                        Platforms += 1;
+                    }
+                }
+            }
         }
     }
 }
