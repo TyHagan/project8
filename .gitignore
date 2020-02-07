@@ -3,3 +3,7 @@ code/test1/Temp
 code/test1/Logs
 code/test1/Builds
 *.meta
+
+# The file below contains Unity .gitignore settings.  A good reference and probably should be used when starting a fresh project
+# This .gitignore file should be placed at the root of your Unity project directory
+# Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
