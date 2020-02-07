@@ -6,6 +6,7 @@ public class movePlayer : MonoBehaviour
 {
     private bool TouchingGround;
     public AudioSource jump;
+    public float WindForce = 30;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +55,15 @@ public class movePlayer : MonoBehaviour
         if (col.gameObject.tag == "Ground")
         {
             TouchingGround = false;
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Wind")
+        {
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            rb.AddForce(Vector2.up * WindForce);
         }
     }
 }

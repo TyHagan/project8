@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class destroy_ball : MonoBehaviour
+public class DestroyBall : MonoBehaviour
 {
     void OnCollisionEnter2D(Collision2D col)
     {
