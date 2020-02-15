@@ -7,6 +7,7 @@ public class PlatformGenerator : MonoBehaviour
     public GameObject thePlatform1;
     public GameObject thePlatform2;
     public GameObject thePlatform3;
+    public GameObject thePlatform4;
     public Transform generationPoint;
     public float distanceBetween;
     private int RandomPlatform = 2;
@@ -26,7 +27,7 @@ public class PlatformGenerator : MonoBehaviour
         {
             if (Platforms > 2)
             {
-                RandomPlatform = Random.Range(1, 4);
+                RandomPlatform = Random.Range(1, 5);
             }
             else
             {
@@ -53,6 +54,14 @@ public class PlatformGenerator : MonoBehaviour
                     {
                         Instantiate(thePlatform3, transform.position, transform.rotation);
                         Platforms += 1;
+                    }
+                    else
+                    {
+                        if(RandomPlatform == 4)
+                        {
+                            Instantiate(thePlatform4, transform.position, transform.rotation);
+                            Platforms += 1;
+                        }
                     }
                 }
             }

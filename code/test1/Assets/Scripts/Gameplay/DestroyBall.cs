@@ -6,7 +6,6 @@ public class DestroyBall : MonoBehaviour
 {
     void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log("In void collision");
         if (col.gameObject.name == "Ball(Clone)")
         {
             Destroy(col.gameObject);

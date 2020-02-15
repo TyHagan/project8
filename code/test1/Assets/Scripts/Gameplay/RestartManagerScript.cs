@@ -17,5 +17,9 @@ public class RestartManagerScript : MonoBehaviour
         {
             Application.LoadLevel("Game");
         }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Application.Quit();
+        }
     }
 }
