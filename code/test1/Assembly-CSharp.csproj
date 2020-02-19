@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Gameplay\BallGenerator.cs" />
      <Compile Include="Assets\Scripts\Gameplay\CameraController.cs" />
      <Compile Include="Assets\Scripts\Gameplay\CoinGet.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\DeletePlatform.cs" />
      <Compile Include="Assets\Scripts\Gameplay\DestroyBall.cs" />
      <Compile Include="Assets\Scripts\Gameplay\EnemyBallBehavior.cs" />
      <Compile Include="Assets\Scripts\Gameplay\movePlayer.cs" />
