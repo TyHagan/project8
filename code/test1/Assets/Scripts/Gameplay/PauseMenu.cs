@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject Menu;
     public GameObject Resume;
+    public GameObject MenuButton;
 
     void Update()
     {
@@ -21,6 +22,7 @@ public class PauseMenu : MonoBehaviour
     {
         Menu.SetActive(false);
         Resume.SetActive(true);
+        MenuButton.SetActive(true);
         Time.timeScale = 0.0f;
     }
 }

@@ -6,6 +6,7 @@ public class ResumeManager : MonoBehaviour
 {
     public GameObject PauseButton;
     public GameObject ResumeButton;
+    public GameObject MenuButton;
 
     void Start()
     {
@@ -16,6 +17,7 @@ public class ResumeManager : MonoBehaviour
     {
         PauseButton.SetActive(true);
         ResumeButton.SetActive(false);
+        MenuButton.SetActive(false);
         Time.timeScale = 1.0f;
     }
 }

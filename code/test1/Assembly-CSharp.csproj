@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\Gameplay\DeletePlatform.cs" />
      <Compile Include="Assets\Scripts\Gameplay\DestroyBall.cs" />
      <Compile Include="Assets\Scripts\Gameplay\EnemyBallBehavior.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\MenuManager.cs" />
      <Compile Include="Assets\Scripts\Gameplay\movePlayer.cs" />
      <Compile Include="Assets\Scripts\Gameplay\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Gameplay\PlatformGenerator.cs" />
@@ -73,6 +74,7 @@
      <Compile Include="Assets\Scripts\Scratch\IfColTest.cs" />
      <Compile Include="Assets\Scripts\Scratch\MoveScript.cs" />
      <Compile Include="Assets\Scripts\Scratch\TestMove.cs" />
+     <Compile Include="Assets\Scripts\Start\HighScoreManager.cs" />
      <Compile Include="Assets\Scripts\Start\LoadGame.cs" />
      <Compile Include="Assets\Scripts\Start\LoadScene.cs" />
  <Reference Include="Unity.Timeline.Editor">

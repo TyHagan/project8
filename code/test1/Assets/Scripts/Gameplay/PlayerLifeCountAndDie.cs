@@ -11,29 +11,37 @@ public class PlayerLifeCountAndDie : MonoBehaviour
     public GameObject HeartOne;
     public GameObject HeartTwo;
     public GameObject HeartThree;
+    public float StartTime;
+    public float CountTime;
 
     void Start()
     {
-        InvokeRepeating("WaitFiveSeconds", 0, .001f);
+        StartTime = 3;
+//        InvokeRepeating("WaitFiveSeconds", 0, .001f);
     }
 
     void Update()
     {
+        if(CountTime >= 0)
+        {
+            CountTime -= Time.deltaTime;
+        }
         if (TouchingEnemy == true)
         {
-            if (Invincible == 0)
-            {
-                LocalLiveCount -= 1;
 
-                if(LocalLiveCount == 1)
-                {
+            if(CountTime <= 0.2)
+            {
+                 LocalLiveCount -= 1;
+
+                 if (LocalLiveCount == 1)
+                 {
                     HeartOne.SetActive(true);
                     HeartTwo.SetActive(false);
                     HeartThree.SetActive(false);
-                }
-                else
-                {
-                    if(LocalLiveCount == 2)
+                    }
+                 else
+                 {
+                    if (LocalLiveCount == 2)
                     {
                         HeartOne.SetActive(true);
                         HeartTwo.SetActive(true);
@@ -41,18 +49,26 @@ public class PlayerLifeCountAndDie : MonoBehaviour
                     }
                     else
                     {
-                        if(LocalLiveCount == 3)
+                        if (LocalLiveCount == 3)
                         {
                             HeartOne.SetActive(true);
                             HeartTwo.SetActive(true);
                             HeartThree.SetActive(true);
                         }
                     }
-                }
+                 }
 
-                Invincible = 1;
-                StartCoroutine(WaitFiveSeconds());
+                CountTime = StartTime;
             }
+
+            /*
+            else
+            {
+                CountTime -= Time.deltaTime;
+            }
+            */
+
+//                StartCoroutine(WaitFiveSeconds());
         }
 
         if (LocalLiveCount < 1)
