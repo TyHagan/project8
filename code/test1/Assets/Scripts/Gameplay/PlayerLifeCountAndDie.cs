@@ -38,7 +38,7 @@ public class PlayerLifeCountAndDie : MonoBehaviour
                     HeartOne.SetActive(true);
                     HeartTwo.SetActive(false);
                     HeartThree.SetActive(false);
-                    }
+                 }
                  else
                  {
                     if (LocalLiveCount == 2)
