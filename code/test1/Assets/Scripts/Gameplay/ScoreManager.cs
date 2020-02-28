@@ -14,12 +14,12 @@ public class ScoreManager : MonoBehaviour
     {
         score = GetComponent<Text>();
         scoreValue = 0;
-        LocalHighScore = PlayerPrefs.GetInt("HighScore");
     }
 
     // Update is called once per frame
     void Update()
     {
+        LocalHighScore = PlayerPrefs.GetInt("HighScore");
         score.text = "Score: " + scoreValue;
         if(LocalHighScore < scoreValue)
         {

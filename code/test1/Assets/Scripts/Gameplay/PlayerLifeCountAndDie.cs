@@ -6,18 +6,20 @@ public class PlayerLifeCountAndDie : MonoBehaviour
 {
     public bool TouchingEnemy = false;
     public int LocalLiveCount = 3;
-    public int Invincible = 0;
+
+    public AudioSource HitSound;
 
     public GameObject HeartOne;
     public GameObject HeartTwo;
     public GameObject HeartThree;
+    public GameObject Invincible;
     public float StartTime;
     public float CountTime;
 
     void Start()
     {
         StartTime = 3;
-//        InvokeRepeating("WaitFiveSeconds", 0, .001f);
+        Invincible.SetActive(false);
     }
 
     void Update()
@@ -26,11 +28,16 @@ public class PlayerLifeCountAndDie : MonoBehaviour
         {
             CountTime -= Time.deltaTime;
         }
+        else
+        {
+            Invincible.SetActive(false);
+        }
         if (TouchingEnemy == true)
         {
 
             if(CountTime <= 0.2)
             {
+                HitSound.Play();
                  LocalLiveCount -= 1;
 
                  if (LocalLiveCount == 1)
@@ -59,26 +66,13 @@ public class PlayerLifeCountAndDie : MonoBehaviour
                  }
 
                 CountTime = StartTime;
+                Invincible.SetActive(true);
             }
-
-            /*
-            else
-            {
-                CountTime -= Time.deltaTime;
-            }
-            */
-
-//                StartCoroutine(WaitFiveSeconds());
         }
 
         if (LocalLiveCount < 1)
         {
             Application.LoadLevel("Game Over");
-        }
-
-        if (Invincible == 1)
-        {
-            StartCoroutine(WaitFiveSeconds());
         }
     }
 
@@ -96,11 +90,5 @@ public class PlayerLifeCountAndDie : MonoBehaviour
         {
             TouchingEnemy = false;
         }
-    }
-
-    IEnumerator WaitFiveSeconds()
-    {
-        yield return new WaitForSeconds(5);
-        Invincible = 0;
     }
 }

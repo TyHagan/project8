@@ -6,17 +6,21 @@ using UnityEngine.UI;
 public class HighScoreManager : MonoBehaviour
 {
     public Text HighScore;
-    public string LocalHighScoreText;
 
     // Start is called before the first frame update
     void Start()
     {
-        HighScore.text = "High Score: " + PlayerPrefs.GetInt("HighScore").ToString();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        HighScore.text = "High Score: " + PlayerPrefs.GetInt("HighScore").ToString();
 
+        if(Input.GetKey(KeyCode.Keypad8) && Input.GetKey(KeyCode.L))
+        {
+            PlayerPrefs.SetInt("HighScore", 0);
+        }
     }
 }
