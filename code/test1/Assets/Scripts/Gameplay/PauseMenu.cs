@@ -10,6 +10,14 @@ public class PauseMenu : MonoBehaviour
     public GameObject Resume;
     public GameObject MenuButton;
 
+    public GameObject Player;
+    movePlayer MoveScript;
+
+    void Start()
+    {
+        MoveScript = Player.GetComponent<movePlayer>();
+    }
+
     void Update()
     {
         if(Input.GetKey(KeyCode.Escape))
@@ -24,5 +32,6 @@ public class PauseMenu : MonoBehaviour
         Resume.SetActive(true);
         MenuButton.SetActive(true);
         Time.timeScale = 0.0f;
+        MoveScript.Paused = true;
     }
 }

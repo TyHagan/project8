@@ -9,6 +9,7 @@ TagManager:
   - Coin
   - Wind
   - Platform
+  - SpeedPower
   layers:
   - Default
   - TransparentFX

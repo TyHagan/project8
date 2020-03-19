@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerLifeCountAndDie : MonoBehaviour
 {
     public bool TouchingEnemy = false;
+    private bool IsInvincible;
     public int LocalLiveCount = 3;
 
     public AudioSource HitSound;
@@ -22,65 +23,45 @@ public class PlayerLifeCountAndDie : MonoBehaviour
         Invincible.SetActive(false);
     }
 
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Enemy")
+        {
+            TouchingEnemy = true;
+        }
+    }
+
     void Update()
     {
-        if(CountTime >= 0)
+        HeartOne.SetActive(LocalLiveCount > 0);
+        HeartTwo.SetActive(LocalLiveCount > 1);
+        HeartThree.SetActive(LocalLiveCount > 2);
+
+        if (CountTime >= 0)
         {
             CountTime -= Time.deltaTime;
         }
         else
         {
             Invincible.SetActive(false);
+            IsInvincible = false;
         }
         if (TouchingEnemy == true)
         {
 
-            if(CountTime <= 0.2)
+            if (CountTime <= 0.2)
             {
                 HitSound.Play();
-                 LocalLiveCount -= 1;
-
-                 if (LocalLiveCount == 1)
-                 {
-                    HeartOne.SetActive(true);
-                    HeartTwo.SetActive(false);
-                    HeartThree.SetActive(false);
-                 }
-                 else
-                 {
-                    if (LocalLiveCount == 2)
-                    {
-                        HeartOne.SetActive(true);
-                        HeartTwo.SetActive(true);
-                        HeartThree.SetActive(false);
-                    }
-                    else
-                    {
-                        if (LocalLiveCount == 3)
-                        {
-                            HeartOne.SetActive(true);
-                            HeartTwo.SetActive(true);
-                            HeartThree.SetActive(true);
-                        }
-                    }
-                 }
-
+                LocalLiveCount -= 1;
                 CountTime = StartTime;
                 Invincible.SetActive(true);
+                IsInvincible = true;
             }
         }
 
         if (LocalLiveCount < 1)
         {
             Application.LoadLevel("Game Over");
-        }
-    }
-
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "Enemy")
-        {
-            TouchingEnemy = true;
         }
     }
 
