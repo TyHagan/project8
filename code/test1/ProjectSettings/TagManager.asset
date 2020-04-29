@@ -10,6 +10,7 @@ TagManager:
   - Wind
   - Platform
   - SpeedPower
+  - InvincibilityPower
   layers:
   - Default
   - TransparentFX

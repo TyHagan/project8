@@ -63,7 +63,7 @@ public class movePlayer : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Ground" || col.gameObject.name == "Destroyer")
+        if (col.gameObject.tag == "Ground" || col.gameObject.name == "Destroyer" || col.gameObject.name == "PlatformDestroyer")
         {
             TouchingGround = true;
             Jumpable = true;
@@ -72,7 +72,7 @@ public class movePlayer : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Ground" || col.gameObject.name == "Destroyer")
+        if (col.gameObject.tag == "Ground" || col.gameObject.name == "Destroyer" || col.gameObject.name == "PlatformDestroyer")
         {
             TouchingGround = false;
             Jumpable = false;

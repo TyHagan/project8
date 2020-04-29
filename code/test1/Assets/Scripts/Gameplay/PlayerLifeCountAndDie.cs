@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerLifeCountAndDie : MonoBehaviour
 {
     public bool TouchingEnemy = false;
-    private bool IsInvincible;
+    public bool IsInvincible;
     public int LocalLiveCount = 3;
 
     public AudioSource HitSound;
@@ -14,6 +14,8 @@ public class PlayerLifeCountAndDie : MonoBehaviour
     public GameObject HeartTwo;
     public GameObject HeartThree;
     public GameObject Invincible;
+    public GameObject IPUParticles;
+
     public float StartTime;
     public float CountTime;
 
@@ -45,6 +47,8 @@ public class PlayerLifeCountAndDie : MonoBehaviour
         {
             Invincible.SetActive(false);
             IsInvincible = false;
+            IPUParticles.SetActive(false);
+
         }
         if (TouchingEnemy == true)
         {

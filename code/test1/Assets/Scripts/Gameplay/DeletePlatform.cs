@@ -10,6 +10,9 @@ public class DeletePlatform : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        Destroy(col.gameObject);
+        if(col.gameObject.tag == "Enemy" || col.gameObject.tag == "Ground")
+        {
+            Destroy(col.gameObject);
+        }
     }
 }
